@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Franklin Nyairo — Web Developer & EdTech Builder | Learning254</title>
+  <meta name="description" content="Franklin Nyairo — Web developer and educational technology specialist based in Kenya. Building modern web platforms, LMS systems, and digital learning solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">
+      <img src="images/learning254logo.jpeg" alt="Learning254 Logo" class="logo-img" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#portfolio" class="mob-link">Work</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#contact" class="mob-link mob-cta">Hire Me</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Web Developer &amp; EdTech Builder · Kenya</p>
+      <h1 class="hero-title">
+        Building digital<br />
+        futures through<br />
+        <em>code &amp; learning.</em>
+      </h1>
+      <p class="hero-sub">
+        I design and build modern web platforms, learning management systems,
+        and data-driven applications — bridging technology and education across East Africa.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Web Development <span class="dot">✦</span></span>
+      <span class="marquee-item">LMS Platforms <span class="dot">✦</span></span>
+      <span class="marquee-item">EdTech Solutions <span class="dot">✦</span></span>
+      <span class="marquee-item">UI/UX Design <span class="dot">✦</span></span>
+      <span class="marquee-item">Database Architecture <span class="dot">✦</span></span>
+      <span class="marquee-item">Research &amp; Consulting <span class="dot">✦</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Web Development <span class="dot">✦</span></span>
+      <span class="marquee-item">LMS Platforms <span class="dot">✦</span></span>
+      <span class="marquee-item">EdTech Solutions <span class="dot">✦</span></span>
+      <span class="marquee-item">UI/UX Design <span class="dot">✦</span></span>
+      <span class="marquee-item">Database Architecture <span class="dot">✦</span></span>
+      <span class="marquee-item">Research &amp; Consulting <span class="dot">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       INTRO STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="intro-strip">
+    <div class="intro-left">
+      <p class="section-label">Who I Am</p>
+      <p class="section-body">
+        Based in Kenya, I specialize in building web platforms and digital learning environments
+        that solve real problems — from driver certification systems to medical portals and
+        school management tools.
+      </p>
+    </div>
+    <div class="intro-right">
+      "Great technology in education doesn't just deliver content —
+      it <em>transforms</em> how people learn, grow, and access opportunity."
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO / WORK
+  ═══════════════════════════════════════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-header">
+      <div>
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title">Recent <em>Projects</em></h2>
+      </div>
+      <div class="filter-tags" id="filterTags">
+        <button class="filter-tag active" data-filter="all">All</button>
+        <button class="filter-tag" data-filter="web">Web Dev</button>
+        <button class="filter-tag" data-filter="lms">LMS</button>
+        <button class="filter-tag" data-filter="research">Research</button>
+      </div>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-item" data-cat="lms">
+        <div class="work-img work-img--dereva">
+          <div class="work-overlay">
+            <a href="https://derevapro.co.ke" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">LMS · EdTech</span>
+          <p class="work-title">Dereva Pro LMS</p>
+          <p class="work-meta">Kenya driver education & NTSA compliance platform — full e-learning system with quizzes, progress tracking, and certification.</p>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="lms">
+        <div class="work-img work-img--maritime">
+          <div class="work-overlay">
+            <a href="https://maritimeenglish.learning254.com" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">LMS · Maritime</span>
+          <p class="work-title">Maritime English Platform</p>
+          <p class="work-meta">Specialized e-learning platform for maritime English proficiency training — courses, assessments, and certificates.</p>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="web">
+        <div class="work-img work-img--nakumed">
+          <div class="work-overlay">
+            <a href="https://nakumed.co.ke" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">Web Dev · Healthcare</span>
+          <p class="work-title">NakuMed Diagnostics</p>
+          <p class="work-meta">Modern diagnostics center portal with appointment booking, service listings, and patient information management.</p>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="web">
+        <div class="work-img work-img--northsouth">
+          <div class="work-overlay">
+            <a href="https://northsoutheducation.co.ke" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">Web Dev · Education</span>
+          <p class="work-title">Northsouth Education</p>
+          <p class="work-meta">Comprehensive school management and education services website — admissions, academics, and parent portal.</p>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="research">
+        <div class="work-img work-img--drpurity">
+          <div class="work-overlay">
+            <a href="https://drpuritymuthima.co.ke" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">Web Dev · Healthcare</span>
+          <p class="work-title">Dr. Purity Muthima</p>
+          <p class="work-meta">Professional medical practitioner site with services, research publications, appointments, and patient resources.</p>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="web">
+        <div class="work-img work-img--safaris">
+          <div class="work-overlay">
+            <a href="https://northsouthsafaris.co.ke" target="_blank" rel="noopener" class="work-link">Visit Site →</a>
+          </div>
+        </div>
+        <div class="work-caption">
+          <span class="work-tag">Web Dev · Tourism</span>
+          <p class="work-title">Northsouth Safaris</p>
+          <p class="work-meta">Hospitality and safari booking platform — tour packages, gallery, itineraries, and online inquiry system.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Developer, builder, <em>educator.</em></h2>
+      <p class="section-body">
+        I'm Franklin Nyairo — a full-stack web developer and educational technology specialist
+        based in Nakuru, Kenya. My work sits at the intersection of software development,
+        digital learning, and user experience design.
+      </p>
+      <p class="section-body" style="margin-top:16px;">
+        I build platforms that last: clean code, responsive design, and systems
+        that scale. From solo freelance projects to institutional LMS rollouts,
+        I bring both technical depth and a learner-first mindset to every project.
+      </p>
+      <a href="#contact" class="btn btn-primary" style="margin-top:32px;display:inline-block;">Let's work together</a>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <p class="stat-num">10+</p>
+        <p class="stat-label">Websites Delivered</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-num">5+</p>
+        <p class="stat-label">Learning Platforms</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-num">3</p>
+        <p class="stat-label">Sectors Served</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-num">5+</p>
+        <p class="stat-label">Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="services-header">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">My <em>Disciplines</em></h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <p class="service-num">01</p>
+        <div class="service-icon">🌐</div>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-desc">Responsive, modern websites and web applications — from landing pages to full-stack platforms built with HTML, CSS, JS, PHP, and MySQL.</p>
+      </div>
+
+      <div class="service-card">
+        <p class="service-num">02</p>
+        <div class="service-icon">🎓</div>
+        <h3 class="service-title">Learning Platforms</h3>
+        <p class="service-desc">Custom LMS design and development for schools, training institutions, and professional certification bodies. Moodle, custom builds, and more.</p>
+      </div>
+
+      <div class="service-card">
+        <p class="service-num">03</p>
+        <div class="service-icon">💡</div>
+        <h3 class="service-title">Educational Technology</h3>
+        <p class="service-desc">Digital tools, interactive content, and e-learning solutions that improve learner engagement and institutional performance.</p>
+      </div>
+
+      <div class="service-card">
+        <p class="service-num">04</p>
+        <div class="service-icon">🎨</div>
+        <h3 class="service-title">UI/UX Design</h3>
+        <p class="service-desc">User-centered interface design and prototyping. Clean, accessible, and intuitive designs that work beautifully across all devices.</p>
+      </div>
+
+      <div class="service-card">
+        <p class="service-num">05</p>
+        <div class="service-icon">🗄️</div>
+        <h3 class="service-title">Database & Backend</h3>
+        <p class="service-desc">Scalable database architecture, API development, and server-side logic. MySQL, PostgreSQL, RESTful APIs, and cPanel/Linux deployment.</p>
+      </div>
+
+      <div class="service-card">
+        <p class="service-num">06</p>
+        <div class="service-icon">🔬</div>
+        <h3 class="service-title">Research & Consulting</h3>
+        <p class="service-desc">EdTech research, digital strategy consulting, and technology needs assessment for educational institutions and SMEs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIAL
+  ═══════════════════════════════════════════ -->
+  <div class="testimonial">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">
+      Franklin delivered our platform on time and with exceptional attention to detail.
+      The system is intuitive, reliable, and our users love it. He truly understands
+      both the technical side and the learning experience.
+    </p>
+    <p class="quote-author">— A Client, Learning Platform Project</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-info">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Let's build something <em>great.</em></h2>
+      <p class="section-body">
+        I'm open to freelance projects, full-time opportunities, and
+        research collaborations. If you have an idea or a problem to solve, let's talk.
+      </p>
+      <div class="contact-details">
+        <a href="mailto:info@learning254.com" class="contact-detail">
+          <span class="contact-icon">✉</span> info@learning254.com
+        </a>
+        <a href="https://learning254.com" target="_blank" class="contact-detail">
+          <span class="contact-icon">🌐</span> learning254.com
+        </a>
+        <a href="https://github.com/franklinnyairo" target="_blank" class="contact-detail">
+          <span class="contact-icon">⌨</span> github.com/franklinnyairo
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+      </div>
+      <div class="form-field">
+        <label for="subject">Project type</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g. LMS, Website, Consulting" />
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project…" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <a href="#home" class="footer-logo">
+      <img src="images/learning254logo.jpeg" alt="Learning254" class="footer-logo-img" />
+    </a>
+    <ul class="footer-links">
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Learning254 · Franklin Nyairo. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

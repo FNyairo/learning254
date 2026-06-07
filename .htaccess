@@ -1,0 +1,50 @@
+# =========================================================
+# Learning254 Portfolio — .htaccess
+# cPanel / Apache configuration
+# =========================================================
+
+# ── Encoding & Charset ────────────────────────────────────
+AddDefaultCharset UTF-8
+
+# ── HTTPS Redirect (enable after SSL is active) ───────────
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ── Remove .html extension (clean URLs) ──────────────────
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# ── Custom Error Pages ────────────────────────────────────
+ErrorDocument 404 /index.html
+
+# ── Browser Caching ───────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg          "access plus 1 month"
+  ExpiresByType image/png           "access plus 1 month"
+  ExpiresByType image/gif           "access plus 1 month"
+  ExpiresByType image/webp          "access plus 1 month"
+  ExpiresByType text/css            "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/html           "access plus 1 hour"
+</IfModule>
+
+# ── Gzip Compression ──────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+  AddOutputFilterByType DEFLATE image/svg+xml application/json
+</IfModule>
+
+# ── Security Headers ──────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Prevent directory listing ─────────────────────────────
+Options -Indexes
