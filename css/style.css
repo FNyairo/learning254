@@ -838,24 +838,6 @@ footer {
   .portfolio-header { flex-direction: column; align-items: flex-start; }
 }
 
-/* ── HERO BADGES ──────────────────────────────────────── */
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 32px;
-}
-.badge {
-  font-size: .7rem;
-  font-weight: 500;
-  letter-spacing: .06em;
-  color: rgba(255,255,255,.7);
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.15);
-  padding: 5px 12px;
-  border-radius: 100px;
-}
-
 /* ── ABOUT CREDENTIALS ────────────────────────────────── */
 .about-creds {
   margin-top: 24px;
