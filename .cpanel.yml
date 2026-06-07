@@ -2,4 +2,12 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/learkysf/public_html/
-    - /bin/cp -r $SRCDIR/. $DEPLOYPATH
+    - /bin/cp $SRCDIR/index.html $DEPLOYPATH/index.html
+    - /bin/cp $SRCDIR/.htaccess $DEPLOYPATH/.htaccess
+    - /bin/cp $SRCDIR/README.md $DEPLOYPATH/README.md
+    - /bin/mkdir -p $DEPLOYPATH/css
+    - /bin/cp -r $SRCDIR/css/. $DEPLOYPATH/css/
+    - /bin/mkdir -p $DEPLOYPATH/js
+    - /bin/cp -r $SRCDIR/js/. $DEPLOYPATH/js/
+    - /bin/mkdir -p $DEPLOYPATH/images
+    - /bin/cp -r $SRCDIR/images/. $DEPLOYPATH/images/
