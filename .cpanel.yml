@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/learkysf/public_html/
+    - /bin/cp -r $SRCDIR/. $DEPLOYPATH
