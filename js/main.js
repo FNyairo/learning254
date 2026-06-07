@@ -74,7 +74,7 @@ function updateGridSpans() {
 
 /* ── SCROLL REVEAL ────────────────────────────────────── */
 const revealEls = document.querySelectorAll(
-  '.work-item, .service-card, .stat-card, .intro-strip > div, .about-text, .contact-info, .contact-form'
+  '.work-item, .service-card, .stat-card, .intro-strip > div, .about-text, .contact-info, .contact-form, .pub-item, .cred-item'
 );
 
 const revealObserver = new IntersectionObserver((entries) => {
